@@ -11,7 +11,7 @@ FROM base AS dependencies
 # se não definido ele irá trabalhar no root do SO
 WORKDIR /usr/src/app
 
-COPY package.json pnpm-lock.json ./
+COPY package.json pnpm-lock.yaml ./
 
 RUN pnpm install
 
